@@ -1,0 +1,6 @@
+<h1> <%= @project.name %></h1>
+<p> <strong> Budget:</strong> <%= @project.budget %> </p> 
+<p> <strong> Development Stage: </strong> <%= @project.completion_stage.to_s %>
+
+<%= button_to "Delete: #{@project.name}", @project %> 
+

@@ -1,0 +1,11 @@
+<h1> Add a New Project <h1> 
+
+<%= form_for @project do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %> <br>
+    <%= f.label :budget %>
+    <%= f.text_field :budget %> <br>
+    <%= f.label :completion_stage%>
+    <%= f.number_field :completion_stage %> <br>
+    <%= f.submit "Create a New Project" %> <br>
+  <% end %>

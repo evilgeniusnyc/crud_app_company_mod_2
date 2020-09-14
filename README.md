@@ -9,12 +9,10 @@ Project ---< Assignment >--- Project_manager ---- Team ---< Team_members
 
 2) As a user, I am able to create a new instance of Project in the database, using text fields for Name and Budget and a number field for development stage.  Upon successfully creating a new Project, I am redirected to the Project Index page.
 
-3) As a user, I am able to edit an instance of a Project.
-
-4) As a user, I am able to delete a project.  
+3) As a user, I am able to go to the Project Manager Index page and see all the Project Managers.  Clicking on one Project Manager's name takes me to that Project Manager's show page.
 
 
-    On the index page for an artist, there should be a list of all the artists' names. Clicking on one artist's name should take me to that artist's show page.
+4) 
 
     There should be an index page for all the instruments, where the name of all the instruments should be listed out, alongside each of their classifications.
 # crud_app_company_mod_2

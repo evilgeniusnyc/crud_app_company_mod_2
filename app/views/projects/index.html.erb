@@ -1,0 +1,8 @@
+<h1>Project Index Page</h1>
+
+<ul> 
+    <% @projects.map do |project_var|%> 
+        <li> <%= link_to project_var.project_name_helper, project_var %><li>    
+    <%end%> 
+ 
+</ul> 
