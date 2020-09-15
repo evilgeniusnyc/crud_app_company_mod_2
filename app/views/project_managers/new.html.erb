@@ -1,2 +1,11 @@
-<h1>ProjectManagers#new</h1>
-<p>Find me in app/views/project_managers/new.html.erb</p>
+<h1> Add a New Project Manager <h1> 
+
+<%= form_for @project_manager do |f| %>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %><br>
+  
+    <%= f.label :bio %><br>
+    <%= f.text_field :bio %><br>
+  
+    <%= f.submit %>
+  <% end %> 

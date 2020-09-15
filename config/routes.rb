@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 # PATCH - you want to change a few or one attribute value in a row
 # DELETE – destroy forever 
 
+# resources :projects, only: [:index]
+# get "/project_managers", to: "project_managers#index", as: "project_managers"
 
 
 get "/projects", to: "projects#index", as: "projects"
@@ -27,14 +29,14 @@ get "/project_managers/:id/edit", to: 'project_managers#edit', as: "edit_project
 patch "/project_managers/:id", to: "project_managers#update"
 delete "/project_manager/:id", to: "project_managers#destroy"
 
-
-get 'assignments/index', to: "assignments#index", as: "assignments"
-get 'assignments/new', to: "assignments#new", as: "new_assignment"
-post 'assignments', to: "assignment#create"
-get "/assignments/:id", to: "assignments#show", as: "assignment" 
-get "/assignments/:id/edit", to: 'assigneents#edit', as: "edit_assignment"
-patch "/assignment/:id", to: "assignment#update"
-delete "/assignment/:id", to: "assignments#destroy"
+resources :assigneents
+# get 'assignments/index', to: "assignments#index", as: "assignments"
+# get 'assignments/new', to: "assignments#new", as: "new_assignment"
+# post 'assignments', to: "assignment#create"
+# get "/assignments/:id", to: "assignments#show", as: "assignment" 
+# get "/assignments/:id/edit", to: 'assigneents#edit', as: "edit_assignment"
+# patch "/assignment/:id", to: "assignment#update"
+# delete "/assignment/:id", to: "assignments#destroy"
 
 
 end

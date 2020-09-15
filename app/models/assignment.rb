@@ -4,6 +4,5 @@ class Assignment < ApplicationRecord
 
     validates :project_id, presence: true
     validates :project_manager_id, presence: true
-end
 
-
+end 
